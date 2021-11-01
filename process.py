@@ -13,8 +13,8 @@ def initLogger():
 
 def parseArgs():
         parser = argparse.ArgumentParser(prog=APP_NAME, usage='%(prog)s [options]')
-        parser.add_argument('--sponsor_addr','-r', type=str, required = False, default = '127.0.0.1', help='sponsor address')
-        parser.add_argument('--sponsor_port','-i', type=int, default = None, help='sponsor port')
+        parser.add_argument('--firstprocess_addr','-r', type=str, required = False, default = '127.0.0.1', help='firstprocess address')
+        parser.add_argument('--firstprocess_port','-i', type=int, default = None, help='firstprocess port')
         parser.add_argument('--use_time','-u',type=int,required	= True, help="Using resource time")
         parser.add_argument('--wait_time','-w',type=int,required = True, help="Idle time")
         parser.add_argument('--name','-n',type=str,required =True, help="Unique Node Name")
