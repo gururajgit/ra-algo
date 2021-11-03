@@ -44,7 +44,6 @@ class RaTest(object):
 			print "PROCESS::" + self.name + "::ACQUIRING_RESOURCE [ CRITICAL SECTION] "
 			test.acquire()
                         print "PROCESS:: DATA STRUCTURE INFO @PROCESS::"+self.name
-                        print "CURRENT SEQUENCE NUMBER::"+str(test.highest_seq_num)
                         print "CURRENT REPLY COUNT - OUTSTANDING::"+str(test.oustanding_reply_count)
                         print "DEFFERED::"
                         print test.reply_deffered
